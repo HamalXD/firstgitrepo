@@ -1,0 +1,46 @@
+/* div p ,
+.header{
+    color: red;
+    text-size-adjust: large;
+}
+
+div > p {
+    color: red;
+    text-size-adjust: large;
+    font-family: 'Nunito Sans', sans-serif;
+    border: dotted 1px red;
+    padding: 10px;
+}
+
+p:first-of-type + p{
+    color: white;
+}
+
+p::first-letter{
+    color: blueviolet;
+}
+
+p::after {
+    display: block;
+    content: "Hello";
+}
+
+input[type] {
+    color: red;    
+} */
+
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;
+    background-color: darkblue;
+    padding: 10px;
+}
+
+.grid-container > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
